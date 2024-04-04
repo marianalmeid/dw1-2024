@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores CSS</title>
+</head>
+    <style>
+       body{
+        background-color: black;
+       }
+        /*selecionar todas as tags h1*/
+        h1 {
+            color: purple;
+        }
+
+        p {
+            color: grey;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* seleciona o elelmento com o id */
+        #titulo_principal {
+            color: rgb(207, 0, 128);
+        }
+
+        #conteudo_principal {
+            color: rgb(74, 5, 77);
+            text-decoration: underline;
+            font-style: italic
+        }
+
+        /* seleciona os ellementos com a determinada classe */
+        .destaque {
+            background-color: rgb(207, 179, 233);
+        }
+
+        .cor_primaria {
+            color: palevioletred;
+        }
+
+        .container {
+            background-color: rgb(219, 163, 245);
+            border: 1px solid purple;
+            font-style: italic;
+        }
+
+        /*selecionar todas as tags que tenham determinada classe*/
+        p.destaque {
+            font-size: 20px;
+        }
+
+
+
+
+    </style>
+
+
+<body>
+
+    <div class="container">
+    <h1
+    id="titulo_principal">primeiro titulo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ut voluptate in neque earum quia modi commodi aspernatur atque, provident aliquam, culpa, delectus distinctio. Ipsa saepe omnis eligendi iste esse?</p>
+</div>
+    
+    <h1 class="destaque">segundo titulo</h1>
+    <p class="destaque
+    cor_primaria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus cum amet blanditiis facilis nam vitae quibusdam recusandae adipisci iste nobis praesentium, qui commodi distinctio magnam repellendus! Ut quam enim repudiandae?</p>
+
+    <p id="conteudo_principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptates nemo. Iste provident consectetur sed iure officiis omnis possimus illo sequi natus excepturi, minima sunt, aliquid vero ipsa accusantium enim.</p>
+
+    <p class= "destaque
+    cor_primaria">paragrafo</p>
+</body>
+</html>
