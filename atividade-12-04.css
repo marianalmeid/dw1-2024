@@ -1,0 +1,18 @@
+.alinhamento {
+    text-align: center;
+}
+.container {
+    background-color: rgb(219, 163, 245);
+    border: 1px solid black;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    text-align: justify;
+}
+.fonte_formula {
+    font-size: 2em;
+}
+
+
