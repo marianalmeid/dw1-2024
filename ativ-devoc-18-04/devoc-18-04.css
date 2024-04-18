@@ -1,0 +1,54 @@
+
+
+
+.cabecalho {
+    font-size: 0.8em;
+    text-align: center;}
+.titulo { 
+    text-transform: uppercase;
+    text-align: center;
+}
+.anton-regular {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.versiculo { 
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.texto {
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    
+    }
+    
+.importante{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+.desafio{
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(165, 156, 156);
+    border: 1px;
+}
