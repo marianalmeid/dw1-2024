@@ -1,0 +1,30 @@
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+code{
+    color: blue;
+    font-size: 1.1em;
+    background-color: rgb(185, 193, 201);
+}
+kbd{
+    color:rgb(0, 110, 255);
+    font-size: 1.3em;
+}
+samp{
+    font-size: 1.2em;
+    color: rgb(138, 1, 1);
+    font-style: bold;
+}
+pre{
+    background-color: rgba(0, 0, 0, 0.918);
+    color: rgb(83, 141, 248);
+
+}
