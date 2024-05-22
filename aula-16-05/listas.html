@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background:rgb(181, 143, 231);
+        }
+        ul.disciplinas{
+            list-style-type: disc;
+        }
+
+        .menu{
+            list-style-type: none;
+        }
+
+        .menu li{
+            background-color: aquamarine;
+            border: 2px solid black;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            width: 150px;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: 2s;
+        }
+        .menu li:hover{
+            background-color: rgb(11, 65, 47);
+            color: white;
+            cursor: pointer;
+        }
+        a.link{
+            text-decoration: none;
+            background-color: rgb(70, 3, 133);
+            border: 2px white;
+            color: white;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>listas ordenadadas</h1>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <h1>listas não ordenadas</h1>
+
+    <ul class="disciplinas">
+        <li> <div>desenvolvimento web 1</div>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul>
+        </li>
+        <li>imc</li>
+        <li>desenvolvimento web 2</li>
+    </ul>
+
+    <h1>listas personalizadas</h1>
+    <ul class="menu">
+        <li>
+            <i class="material-icons">cloud</i> item 1</li>
+        <li>
+            <i class="material-icons">favorite</i> item 2</li>
+        <li>
+            <i class="material-icons">cloud</i> item 3</li>
+    </ul>
+    <h1>links</h1>
+    <p>clique  <a class="link" href="https://www.utfpr.edu.br">aqui</a> para acessar o site da da UTFPR</p>
+   
+
+
+
+
+
+
+</body>
+</html>
