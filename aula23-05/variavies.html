@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variaveis CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Teko:wght@300..700&display=swap');
+
+        :root{
+            --cor-fundo: black;
+            --cor-principal: white;
+            --fonte: 15px "Pacifico", cursive;
+            --fonte-destaque: 25px "Teko", sans-serif;
+            --altura-cabecalho: 100px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font: var(--fonte);
+        }
+        .container{
+            background-color: var(--cor-fundo);
+            height: 100vh;
+        }
+        .cabecalho{
+            border: 1px solid rgb(248, 243, 243);
+            color: var(--cor-principal);
+            height: var(--altura-cabecalho);
+            overflow-y: hidden;
+            padding: 10px;
+        }
+        .principal{
+            border: 1px solid var(--cor-principal);
+            color: var(--cor-principal);
+            padding: 10px;
+            height: calc(100vh - var(--altura-cabecalho));
+        }
+        .principal h1{
+            padding: 10px;
+            font: var(--fonte-destaque);
+        }
+        .principal ul{
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+            <p>cabecalho</p>
+        </div>
+        <div class="principal">
+        <h1>lista de tarefas</h1>
+        <ul>
+            <li>tarefa1</li>
+            <li>tarefa2</li>
+            <li>tarefa3</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
