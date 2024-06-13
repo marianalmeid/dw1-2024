@@ -11,7 +11,6 @@
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-        
         .container{
             background-color: rgb(187, 140, 187);
             width: 100vw;
@@ -42,10 +41,19 @@
             background-color: blue;
             color:aquamarine;
         }
-        #secao1{
-            background: linear-gradient(purple, rgb(150, 19, 41));
-            height: 100vh;
-            width: 100vw;
+        #secao1.flexbox{
+           background-image: url(https://www.infoescola.com/wp-content/uploads/2020/01/cacau-793125286.jpg);
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           height: 100vh;
+           width: 100vw;
+           flex: end;
+        }
+        #secao1.flexbox p{
+            color: white;
+            font-size: 50px;
+            text-align: left;
         }
         #secao2{
             background: linear-gradient(purple, rgb(231, 228, 228));
@@ -81,12 +89,14 @@
              id="menu">
             <ul>
                 <li><a href="#secao1">secao 1</a></li>
-                <li><a href="#secao2"></a></li>
-                <li><a href="#secao3"></a></li>
-                <li><a href="#contatos"></a></li>
+                <li><a href="#secao2">secão 2</a></li>
+                <li><a href="#secao3">seção 3</a></li>
+                <li><a href="#contatos">contatos</a></li>
             </ul>
         </div>
-        <div id="secao1"></div>
+        <div class="flexbox" id="secao1">
+            <p>O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!</p>
+        </div>
 
         <div id="secao2"></div>
         <div id="secao3"></div>
