@@ -41,19 +41,24 @@
             background-color: blue;
             color:aquamarine;
         }
-        #secao1.flexbox{
+        #secao1{
            background-image: url(https://www.infoescola.com/wp-content/uploads/2020/01/cacau-793125286.jpg);
            background-size: cover;
            background-position: center;
            background-repeat: no-repeat;
            height: 100vh;
            width: 100vw;
-           flex: end;
+           display: flex;
+           justify-content: flex-end;
         }
-        #secao1.flexbox p{
+        #secao1 p{
+
+            height: 100vh;
+            width: 50vw;
             color: white;
             font-size: 50px;
-            text-align: left;
+            text-shadow: 5px 1px black, -5px -1px black;
+            align-items: center;
         }
         #secao2{
             background: linear-gradient(purple, rgb(231, 228, 228));
@@ -94,7 +99,7 @@
                 <li><a href="#contatos">contatos</a></li>
             </ul>
         </div>
-        <div class="flexbox" id="secao1">
+        <div id="secao1">
             <p>O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!</p>
         </div>
 
@@ -102,6 +107,7 @@
         <div id="secao3"></div>
 
         <div id="contatos">
+            <p>jjkvdbfdsvbfvbesjbfebf</p>
             <a href="#menu">meni</a>
         </div>
     </div>
