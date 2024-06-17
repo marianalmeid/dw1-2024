@@ -7,6 +7,15 @@
     <style>      
         @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spinnaker&display=swap ');
 
+        :root{
+            --cor-menu: rgb(22, 11, 1);
+            --link-menu: black;
+            --fonte-menu: 1.1rem "Rubik", sans-serif;
+            --color-link: rgb(123, 230, 164);
+            --color-principal: white;
+
+        }
+
         *{
             margin: 0;
             padding: 0;
@@ -14,15 +23,13 @@
             scroll-behavior: smooth;
         }
         .container{
-            background-color: rgb(187, 140, 187);
             width: 100vw;
             height: 100vh;
 
         } 
         .menu{
-            font-family: "Rubik", sans-serif;
-            height: 80px;
-            background-color: rgb(4, 4, 107);
+            font: var(--fonte-menu);
+            background-color: var(--cor-menu);
         }
         .menu ul{
             display: flex;
@@ -30,22 +37,22 @@
         .menu li{
             list-style: none;
         }
-        .menu a{
+        div#menu a{
             display: inline-block;
-            border: 1px solid rgb(4, 4, 107);
-            padding: 25px 25px;
+            border: 1px solid var(--cor-menu);
+            padding: 25px 15px;
             height: 80px;
             width: 100px;
             text-decoration: none;
-            color: rgb(247, 240, 240);
+            color: var(--color-principal);
             transition: 1s;
         }
         .menu a:hover{
-            background-color: blue;
-            color:black;
+            background-color: var(--link-menu); 
+            color:var(--color-link);
         }
         #secao1{
-           background-image: url(https://www.infoescola.com/wp-content/uploads/2020/01/cacau-793125286.jpg);
+           background-image: url(https://www.publicdomainpictures.net/pictures/540000/nahled/milk-chocolate-background-1694785217Heg.jpg);
            background-size: cover;
            background-position: center;
            background-repeat: no-repeat;
@@ -67,7 +74,35 @@
             background: linear-gradient(rgb(18, 8, 43), rgb(19, 28, 150));
             height: 100vh;
             width: 100vw;
+        
         }
+        #secao2 p{
+            font-size: 3.12rem;
+            display: flex;
+            align-self: baseline;
+        }
+        div.line{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+
+            flex-wrap: wrap;
+        }
+        
+        .box{
+            width: 33%;
+            height: 85vh;
+            background-color: rgb(113, 25, 255);
+            border: 1px solid black;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  
+        }
+        
         #secao3{
             background: linear-gradient(black, rgb(56, 56, 56));
             height: 100vh;
@@ -78,17 +113,13 @@
             height: 100vh;
             width: 100vw;
         }
-        div#menu a{
-            display: inline-block;
-            border: 1px solid rgb(4, 4, 107);
-            padding: 25px 15px;
-            height: 80px;
-            width: 100px;
-            text-decoration: none;
-            color: rgb(247, 240, 240);
-            transition: 1s;
-        }
-
+       p#back{
+        font-size: 10px;
+       }
+       .pic1{
+        background-image: url(https://static.wixstatic.com/media/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg/v1/fill/w_727,h_1000,al_c,q_85,usm_0.66_1.00_0.01/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg);
+        background-position: center;
+       }
     </style>
 </head>
 <body>
@@ -106,12 +137,21 @@
             <p>O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!</p>
         </div>
 
-        <div id="secao2"></div>
-        <div id="secao3"></div>
+        <div id="secao2">
+            <p>Os melhores momentos são aqui, na Cacau Show!</p>
+            <div class="line">
+                <div class="box flexbox pic1"></div>
+                <div class="box flexbox pic2"></div>
+                <div class="box flexbox pic3"></div>
+            </div>
+            <p id="back"><a href="#menu">voltar</a></p>
+        </div>
+
+        <div id="secao3"><p id="back"><a href="#menu">voltar</a></p></div>
 
         <div id="contatos">
             <p>jjkvdbfdsvbfvbesjbfebf</p>
-            <a href="#menu">meni</a>
+            <p id="back"><a href="#menu">voltar</a></p>
         </div>
     </div>
 
