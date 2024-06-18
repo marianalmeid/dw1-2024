@@ -71,7 +71,7 @@
             align-items: center;
         }
         #secao2{
-            background: linear-gradient(rgb(18, 8, 43), rgb(19, 28, 150));
+           background-color: var(--color-link);
             height: 100vh;
             width: 100vw;
         
@@ -94,15 +94,31 @@
             width: 33%;
             height: 85vh;
             background-color: rgb(113, 25, 255);
-            border: 1px solid black;
         }
         .flexbox{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
   
         }
-        
+        .flexbox a{
+            margin: 0.5rem;
+            width: 80%;
+            height: 3rem;
+            text-align: center;
+            font-size: 2rem;
+            color: var(--link-menu);
+            text-decoration: none;
+            background-color: aquamarine;
+            border: 0.2rem solid whitesmoke;
+            border-radius: 3rem;
+        }
+
+        .flexbox a:hover{
+            background-color: var(--cor-menu);
+            transition: 2s;
+            color:aliceblue;
+        }
         #secao3{
             background: linear-gradient(black, rgb(56, 56, 56));
             height: 100vh;
@@ -120,6 +136,14 @@
         background-image: url(https://static.wixstatic.com/media/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg/v1/fill/w_727,h_1000,al_c,q_85,usm_0.66_1.00_0.01/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg);
         background-position: center;
        }
+       .pic2{
+        background-image: url(https://www.cacaushow.com.br/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dwb92b51c7/large/1001585_2.png);
+        background-position: center;
+       }
+       .pic3{
+        background-image:url(https://gkpb.com.br/wp-content/uploads/2021/07/cacau-show-dreams-1.jpg);
+        background-position: center;
+        }
     </style>
 </head>
 <body>
@@ -140,9 +164,9 @@
         <div id="secao2">
             <p>Os melhores momentos são aqui, na Cacau Show!</p>
             <div class="line">
-                <div class="box flexbox pic1"></div>
-                <div class="box flexbox pic2"></div>
-                <div class="box flexbox pic3"></div>
+                <div class="box flexbox pic1"><a href="https://www.cacaushow.com.br/categoria/nossas-marcas/lacreme">laCreme</a></div>
+                <div class="box flexbox pic2"><a href="https://www.cacaushow.com.br/categoria/nossas-marcas/bendito-cacao">Bendito Cacao</a></div>
+                <div class="box flexbox pic3"><a href="https://www.cacaushow.com.br/categoria/nossas-marcas/dreams">Dreams</a></div>
             </div>
             <p id="back"><a href="#menu">voltar</a></p>
         </div>
