@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>      
-        @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spinnaker&display=swap ');
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        :root{
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spinnaker&display=swap ');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+        :root {
             --cor-menu: rgb(22, 11, 1);
             --link-menu: black;
             --fonte-menu: 1.1rem "Rubik", sans-serif;
             --color-link: rgb(123, 230, 164);
             --color-principal: white;
+            --cor-back: rgb(114, 53, 28);
+            --fonte-principal: 1rem "Lora", serif;
 
         }
 
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
+            
         }
-        .container{
+
+        .container {
             width: 100vw;
             height: 100vh;
 
-        } 
-        .menu{
+        }
+
+        .menu {
             font: var(--fonte-menu);
             background-color: var(--cor-menu);
         }
-        .menu ul{
+
+        .menu ul {
             display: flex;
         }
-        .menu li{
+
+        .menu li {
             list-style: none;
         }
-        div#menu a{
+
+        div#menu a {
             display: inline-block;
             border: 1px solid var(--cor-menu);
             padding: 25px 15px;
@@ -47,49 +59,68 @@
             color: var(--color-principal);
             transition: 1s;
         }
-        .menu a:hover{
-            background-color: var(--link-menu); 
-            color:var(--color-link);
+
+        .menu a:hover {
+            background-color: var(--link-menu);
+            color: var(--color-link);
         }
-        #secao1{
-           background-image: url(https://www.publicdomainpictures.net/pictures/540000/nahled/milk-chocolate-background-1694785217Heg.jpg);
-           background-size: cover;
-           background-position: center;
-           background-repeat: no-repeat;
-           height: 100vh;
-           width: 100vw;
-           display: flex;
-           align-items: end;
-           justify-content: flex-end;
-           flex-wrap: wrap;
+
+        #secao1 {
+            background-image: url(https://www.publicdomainpictures.net/pictures/540000/nahled/milk-chocolate-background-1694785217Heg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            
 
         }
-        .box{
+
+        .secao1-texto {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 2rem;
+            font: var(--fonte-principal);
+        }
+
+        .box {
             align-self: center;
             justify-self: flex-end;
         }
 
-        #secao1 p{
+        #secao1 p {
 
-            height: 100vh;
+            
             width: 50vw;
             color: white;
-            font-size: 3.5rem;
+            font-size: 3.3rem;
             text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.7);
-            
+
         }
-        #secao2{
-           background-color: var(--color-link);
+
+        #secao2 {
+            background-color: var(--color-link);
             height: 100vh;
             width: 100vw;
-        
-        }
-        #secao2 p{
-            font-size: 3rem;
             display: flex;
-            align-self: baseline;
+            flex-direction: column;
+            justify-content: space-between;
+
         }
-        div.line{
+
+        #secao2 p {
+            font-size: 3rem;
+            font: var(--fonte-principal);
+            
+        }
+
+        div.line {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -97,19 +128,21 @@
 
             flex-wrap: wrap;
         }
-        
-        .box{
+
+        .box {
             width: 33%;
-            height: 85vh;
+            height: 75vh;
             background-color: rgb(113, 25, 255);
         }
-        .flexbox{
+
+        .flexbox {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-  
+
         }
-        .flexbox a{
+
+        .flexbox a {
             margin: 0.5rem;
             width: 80%;
             height: 3rem;
@@ -120,75 +153,86 @@
             background-color: aquamarine;
             border: 0.2rem solid whitesmoke;
             border-radius: 3rem;
-        }
-
-        .flexbox a:hover{
+        } 
+       
+        .flexbox a:hover {
             background-color: var(--cor-menu);
             transition: 2s;
-            color:aliceblue;
+            color: aliceblue;
         }
-        #secao3{
-            background-color: aliceblue;
+
+        #secao3 {
+            background: linear-gradient(aliceblue, rgb(84, 105, 97));
             height: 100vh;
             width: 100vw;
             display: flex;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: space-between;
+            font: var(--fonte-principal);
+
         }
-        p.text{
+
+        p.text {
             justify-self: center;
             align-self: center;
             margin: 1rem;
             font-size: 3rem;
             text-align: center;
+            margin-top: 8rem;
+            line-height: 150%;
         }
-        #contatos{
+
+        #contatos {
             background-color: var(--cor-menu);
             color: var(--color-principal);
             font: var(--fonte-menu);
             height: 100vh;
             width: 100vw;
-           
-            line-height: 150%;
-            
+
+            line-height: 200%;
+
         }
 
-        .end{
+        .end {
             text-indent: 0.5rem;
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
 
-       p#back a{
-        text-decoration: none;
-        color: aliceblue;
-        font-size: 1rem;
-        border: 1px solid black;
-        text-align: center;
-        background-color: var(--cor-menu);
-        border-radius: 20%;
-        width: 4rem;
-        height: 1.5rem;
-        justify-self:flex-end;
-        align-self: baseline;
-       }
+        a.voltar {
+            text-decoration: none;
+            font-size: 1rem;
+            color: aliceblue;
+            background-color: var(--cor-back);
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: .5rem;
+            margin-left: .5rem;
+        }
 
-       .pic1{
-        background-image: url(https://static.wixstatic.com/media/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg/v1/fill/w_727,h_1000,al_c,q_85,usm_0.66_1.00_0.01/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg);
-        background-position: center;
-       }
-       .pic2{
-        background-image: url(https://www.cacaushow.com.br/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dwb92b51c7/large/1001585_2.png);
-        background-position: center;
-       }
-       .pic3{
-        background-image:url(https://gkpb.com.br/wp-content/uploads/2021/07/cacau-show-dreams-1.jpg);
-        background-position: center;
+        .pic1 {
+            background-image: url(https://static.wixstatic.com/media/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg/v1/fill/w_727,h_1000,al_c,q_85,usm_0.66_1.00_0.01/6cd7ee_96b8f68818fa46b286b05e73a023d8dc~mv2.jpg);
+            background-position: center;
+        }
+
+        .pic2 {
+            background-image: url(https://www.cacaushow.com.br/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dwb92b51c7/large/1001585_2.png);
+            background-position: center;
+        }
+
+        .pic3 {
+            background-image: url(https://gkpb.com.br/wp-content/uploads/2021/07/cacau-show-dreams-1.jpg);
+            background-position: center;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="menu"
-             id="menu">
+        <div class="menu" id="menu">
             <ul>
                 <li><a href="#secao1">secao 1</a></li>
                 <li><a href="#secao2">secão 2</a></li>
@@ -197,34 +241,52 @@
             </ul>
         </div>
         <div id="secao1">
-            <p class="box1">O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!</p>
+            <div class="secao1-texto">
+                <p class="box1">
+                    O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!
+                </p>
+            </div>
 
-            <a href="#menu">voltar</a>
+            <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
         </div>
 
         <div id="secao2">
             <p>Os melhores momentos são aqui, na Cacau Show!</p>
             <div class="line">
-                <div class="box flexbox pic1"><a href="https://www.cacaushow.com.br/categoria/nossas-marcas/lacreme">laCreme</a></div>
-                <div class="box flexbox pic2"><a href="https://www.cacaushow.com.br/categoria/nossas-marcas/bendito-cacao">Bendito Cacao</a></div>
-                <div class="box flexbox pic3"><a href="https://www.cacaushow.com.br/categoria/nossas-marcas/dreams">Dreams</a></div>
+                <div class="box flexbox pic1">
+                    <a
+                        href="https://www.cacaushow.com.br/categoria/nossas-marcas/lacreme">laCreme
+                    </a>
+                </div>
+                <div class="box flexbox pic2"><a
+                        href="https://www.cacaushow.com.br/categoria/nossas-marcas/bendito-cacao">Bendito Cacao</a>
+                </div>
+                <div class="box flexbox pic3"><a
+                        href="https://www.cacaushow.com.br/categoria/nossas-marcas/dreams">Dreams</a></div>
             </div>
-            <p id="back"><a href="#menu">voltar</a></p>
+            <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
         </div>
 
         <div id="secao3">
-            <p class="text">Cacau Show é uma empresa alimentícia brasileira, localizada em Itapevi, no estado de São Paulo. É uma marca de chocolates nacional, fundada em 1988 por Alexandre Tadeu da Costa, aos dezessete anos, no bairro da Casa Verde, zona norte de São Paulo, com a ajuda de uma funcionária e quinhentos dólares.</p>
-            
-            <p id="back"><a href="#menu">voltar</a></p>
+            <p class="text">
+                Cacau Show é uma empresa alimentícia brasileira, localizada em Itapevi, no estado de São
+                Paulo. É uma marca de chocolates nacional, fundada em 1988 por Alexandre Tadeu da Costa, aos dezessete
+                anos, no bairro da Casa Verde, zona norte de São Paulo, com a ajuda de uma funcionária e quinhentos
+                dólares.</p>
+
+            <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
         </div>
 
         <div id="contatos">
             <p class="end"> Cacau Comércio Eletrônico LTDA 32.143.933/0002-05. </p>
-            <p class="end">Endereço: Avenida Helio Ossamu Daikuara, 1445 Bairro Jardim Vista Alegre Município Embu das Artes - SP </p>
+            <p class="end">Endereço: Avenida Helio Ossamu Daikuara, 1445 Bairro Jardim Vista Alegre Município Embu das
+                Artes - SP </p>
             <p class="end">CEP: 06807-000 </p>
-            <p id="back"><a href="#menu">voltar</a></p>
+            <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
         </div>
+
     </div>
 
 </body>
+
 </html>
