@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+        }
+        .cont2{
+            width: 80vw;
+            height: 100vh;
+        }
+        .cont2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: space-between;
+
+        
+        }
+        .cabecalho{
+            width: 80vw;
+            height: 15vh;
+            border: 1px solid black;
+            background-color: rgb(236, 236, 155);
+            align-items: baseline;
+        }
+        .conteudo{
+            width: 80vw;
+            height: 70vh;
+            border: 1px solid black;
+            background-color: rgb(168, 243, 190);
+            justify-content: flex-end;
+        }
+        .side{
+            width: 20vw;
+            height: 100vh;
+            border: 1px solid black;
+            background-color: rgb(190, 248, 229);
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .rodape{
+            width: 80vw;
+            height: 15vh;
+            align-items: end;
+            border: 1px solid black;
+            background-color: rgb(255, 209, 217);
+            align-items: baseline;
+        }
+        p{
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-family:"Shadows Into Light", cursive;;
+            font-size: 3rem;
+        }
+        .side p{
+            margin-top: 5rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side"><p>sidebar</p></div>
+        
+        <div class="cont2">
+            <div class="cabecalho"><p>topo</p></div>
+            <div class="conteudo"><p>conteúdo</p></div>
+            <div class="rodape"><p>rodapé</p></div>
+        </div>
+        
+    </div>
+</body>
+</html>
