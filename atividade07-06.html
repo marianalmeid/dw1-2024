@@ -37,6 +37,8 @@
         }
 
         .menu {
+            
+            display: flex;
             font: var(--fonte-menu);
             background-color: var(--cor-menu);
         }
@@ -49,9 +51,11 @@
             list-style: none;
         }
         .logo{
-            height: 80px;
-            width: 26%;
-            margin-left: 15%;
+            height: 30%;
+            width: 15%;
+            align-items: center;
+            margin-left: 20%;
+            
         }
         div#menu a {
             display: inline-block;
@@ -79,16 +83,21 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-items: flex-start;
             
-
         }
-        
-        .secao1-texto {
+        .caixa{
+            display: flex;
             width: 100%;
+            height: 90%;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .secao1-texto {
+            width: 50%;
             display: flex;
             justify-content: flex-end;
-            align-items: center;
+            align-items: flex-end;
             padding: 2rem;
             font: var(--fonte-principal);
         }
@@ -191,7 +200,7 @@
             background-color: var(--cor-menu);
             color: var(--color-principal);
             font: var(--fonte-menu);
-            height: 100vh;
+            height: 30vh;
             width: 100vw;
 
             line-height: 200%;
@@ -243,14 +252,17 @@
                 <li><a href="#secao2">nossas linhas</a></li>
                 <li><a href="#secao3">nossa história</a></li>
                 <li><a href="#contatos">contatos</a></li>
-                <li><img class="logo" src="https://logodownload.org/wp-content/uploads/2017/07/cacau-show-logo-1.png" alt=""></li>
+                
             </ul>
         </div>
         <div id="secao1">
-            <div class="secao1-texto">
-                <p class="box1">
-                    O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!
-                </p>
+            <div class="caixa">
+                <img class="logo" src= "https://cdn.iconscout.com/icon/free/png-256/free-cacau-show-3442138-2876005.png" alt=""></li>
+                <div class="secao1-texto">
+                    <p class="box1">
+                        O Cacau é a principal matéria prima do chocolate e, para garantir o melhor chocolate para os nossos consumidores, precisamos cuidar da qualidade e do futuro desse fruto!
+                    </p>
+            </div>
             </div>
 
             <a class="voltar" href="#menu"><i class="material-icons">keyboard_arrow_up</i></a>
