@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+    <style>
+        :root{
+            --fundo: blue;
+            --cor-fonte: white;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--fundo);
+        }
+        li{
+            list-style: none;
+            background-color: var(--cor-fonte);
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+           
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            height: 2rem;
+            width: 100%;
+            color: var(--cor-fonte);
+            
+        }
+        .secao{
+            display: flex;
+            height: 50vh;
+            width: 100vw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5rem;
+        }
+        .card{
+            display: flex;
+            width: 15vw;
+            height: 50vh;
+            background-color: var(--cor-fonte);
+            border-radius: 3%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .plano-nome{
+            font-size: 1.2rem;
+            background-color: var(--cor-fonte);
+        }
+        .plano-valor{
+            font-size: 1.5rem;
+            color: var(--fundo);
+            background-color: var(--cor-fonte);
+        }
+        .plano-descricao{
+            text-align: center;
+            font-size: 0.7rem;
+            
+            color: gray;
+        }
+        .plano-comprar{
+            display: flex;
+            background-color: var(--fundo);
+            height: 2rem;
+            width: 60%;
+            border-radius: 8%;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        span{
+            color: var(--cor-fonte);
+           
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Planos</h1>
+        <div class="secao">
+            <div class="card">            
+                <div class="plano-nome">Starter</div>
+                <div class="plano-valor">R$ 50,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>1 usuário</li>
+                        <li>100 GB de armazenamento</li>
+                        <li>Suporte por email</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+            <div class="card">
+                
+                <div class="plano-nome">Personal</div>
+                <div class="plano-valor">R$ 100,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>10 usuários</li>
+                        <li>1 TB de armazenamento</li>
+                        <li>Suporte por email</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="plano-nome">Team</div>
+                <div class="plano-valor">R$ 300,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>50 usuários</li>
+                        <li>5 TB de armazenamento</li>
+                        <li>Suporte por email</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
