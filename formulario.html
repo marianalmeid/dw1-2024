@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;}
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .login {
+        flex: 1;
+        padding: 40px;
+        background-color: white;
+    }
+
+    .sign h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .sign h4 {
+        margin-bottom: 20px;
+        color: rgb(150, 144, 144);
+        font-size: 1rem;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+    }
+
+    .continue {
+        display: inline-block;
+        width: 47vw;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .or {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        color: #777;
+    }
+
+    .or hr {
+        flex: 1;
+        border: none;
+        border-top: 1px solid gainsboro;
+        margin: 0 10px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        color: grey;
+        background-color: white;
+    }
+
+    .termo {
+        margin-top: 20px;
+        font-size: 15px;
+        color: grey;
+        text-align: center;
+    }
+
+    .termo a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .image {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 3%;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .logo img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .botao img{
+        flex-grow: 1; 
+        text-align: center;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="sign">
+                <h1>Sign in or create an account</h1>
+                <h4>Welcome Back! Please enter your details</h4>
+
+                <form action="#" method="get">
+                    <label for="nomeusuário"></label>
+                    <input id="nomeusuário" type="text" placeholder="Name" required>
+                    <label for="email"></label>
+                    <input id="email" type="email" placeholder="Email address" required>
+                    <p class="continue">Continue</p>
+                </form>
+
+                <div class="or">
+                    <hr>
+                    <p>or</p>
+                    <hr>
+                </div>
+
+
+                <button class="botao">
+                    <div class="logo"><img src="https://imagepng.org/wp-content/uploads/2019/08/google-icon.png" alt=""></div>
+                    <p>Continue with Google</p>
+                </button>
+
+                <button class="botao">
+                    <div class="logo"><img src="https://www.svgrepo.com/show/69341/apple-logo.svg" alt=""></div>
+                    <p>Continue with Apple</p>
+                </button>
+
+                <button class="botao">
+                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt=""></div>
+                    <p>Continue with Facebook</p>
+                </button>
+                
+                <p class="termo">
+                    By signing in or creating an account, you agree with our 
+                    <a href="#">Terms & Conditions</a> and <a href="#">Privacy Statement</a>.
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://www.infoescola.com/wp-content/uploads/2019/09/paisagem-172856282.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
