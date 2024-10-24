@@ -13,5 +13,5 @@ function showSidebar(){
 }
 
 function hideSidebar(){
-    sidebar.style.display = "-100%"
+    sidebar.style.right = "-100%"
 }
