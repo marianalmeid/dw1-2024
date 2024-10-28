@@ -4,9 +4,5 @@ function getInitials(nome){
 }                                                                                            
 
 
-
-
-
-
 console.log(getInitials("João Silva")); // Deve exibir: "JS"
 console.log(getInitials("Maria Oliveira")); // Deve exibir: "MO"

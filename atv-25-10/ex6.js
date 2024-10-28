@@ -1,8 +1,6 @@
 function toSnakeCase(str) {
-    return str
-        .trim()                
-        .toLowerCase()         
-        .replace(/\s+/g, '_');
+    let underline = str.trim().toLowerCase().replace(/\s+/g, '_');
+    return underline
 }
 
 console.log(toSnakeCase("Hello World")); // Deve exibir: "hello_world"
